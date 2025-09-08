@@ -1,48 +1,78 @@
 # flutter_shimmer_lite
 
-**Lightweight, dependency-free shimmer (skeleton) widgets for Flutter** — works seamlessly on Android, iOS, and Web. Drop in animated placeholders such as `TextShimmer`, `ProfileShimmer`, `VideoShimmer`, and more to improve **perceived loading performance**.
+
+**flutter_shimmer_lite** is a lightweight and customizable shimmer (skeleton loader) widget package for Flutter.  
+It helps display animated loading placeholders to improve perceived performance while data is being fetched.  
+
+Works seamlessly on **Android**, **iOS**, and **Web** — no native code required.
 
 ---
 
 ## ✨ Features
 
-- ✅ Null-safe, pure Dart/Flutter (no native code or platform channels)
-- 🎯 Lightweight and dependency-free
-- ⚙️ Modular API — import only what you need
-- 🎨 Highly customizable: dark mode, purplish theme, custom gradients, shapes
-- 📱 Works on Android, iOS, and Web
-- 🧪 Example app included for quick visual testing
+- Pure Dart/Flutter implementation (null-safe, dependency-free)
+- Multiple ready-made shimmer widgets:
+  - `TextShimmer`
+  - `ProfileShimmer`
+  - `ProfilePageShimmer`
+  - `VideoShimmer`
+  - `YoutubeShimmer`
+  - `ListTileShimmer`
+  - `PlayStoreShimmer`
+- Customizable:
+  - Dark mode and “purplish” theme
+  - Your own gradient colors
+  - Circular or rectangular shapes
+  - Control animation direction
+- Includes an `example/` app for quick testing
 
 ---
 
-## 🚀 Installation
+## 📦 Installation
 
-Add the package to your `pubspec.yaml`:
+Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
   flutter_shimmer_lite: ^0.1.0
+```
 
-Then import it in your Dart code:
+Then run:
+```
+flutter pub get
+```
+Import in your Dart code:
 
+```
 import 'package:flutter_shimmer_lite/flutter_shimmer_lite.dart';
+```
 
-Note: If developing locally, point to the package path:
-dependencies:
-  flutter_shimmer_lite:
-    path: ../
-
-⚡ Quick Usage
-Simple Text Shimmer:
+🚀 Quick Usage
+Text shimmer
+```
 TextShimmer(
   text: 'Loading...',
   fontSize: 20,
 )
-
-Profile Placeholder:
-
+```
+Profile shimmer with lines
+```
 ProfileShimmer(
   isRectBox: false,
   isDarkMode: false,
   hasBottomLines: true,
 )
+```
+
+Video thumbnails shimmer
+```
+VideoShimmer(
+  isDarkMode: true,
+  hasCustomColors: true,
+  colors: [
+    Color(0xFFEAEAEA),
+    Color(0xFFCCCCCC),
+    Color(0xFFEAEAEA),
+  ],
+)
+```
