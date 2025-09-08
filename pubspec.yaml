@@ -1,7 +1,11 @@
 name: flutter_shimmer_lite
 description: "A lightweight, modular shimmer widget collection for Flutter (Android / iOS / Web)."
 version: 0.0.1
-homepage:
+homepage: https://github.com/george-pgdm/flutter_shimmer_lite
+repository: https://github.com/george-pgdm/flutter_shimmer_lite
+issue_tracker: https://github.com/george-pgdm/flutter_shimmer_lite/issues
+documentation: https://pub.dev/documentation/flutter_shimmer_lite/latest/
+
 
 environment:
   sdk: '>=3.2.6 <4.0.0'
